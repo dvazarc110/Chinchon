@@ -281,7 +281,7 @@ Chinchon/
 
 ## Descripción de paquetes
 
-## Paquete `chinchon.deck`
+## [Paquete `chinchon.deck`](./src/chinchon/deck/)
 
 Este paquete contiene las clases relacionadas con la baraja y los distintos montones de cartas utilizados durante la partida.
 
@@ -298,7 +298,7 @@ Es el paquete base del modelo de cartas.
 
 ---
 
-## Paquete `chinchon.player`
+## [Paquete `chinchon.player`](./src/chinchon/player/)
 
 Este paquete contiene las clases relacionadas con los jugadores y con el análisis de sus manos.
 
@@ -318,7 +318,7 @@ Es uno de los paquetes más importantes del proyecto, ya que contiene gran parte
 
 ---
 
-## Paquete `chinchon.table`
+## [Paquete `chinchon.table`](./src/chinchon/table/)
 
 Este paquete contiene las clases encargadas de coordinar la partida.
 
@@ -338,9 +338,9 @@ Actúa como capa de control de la aplicación.
 
 # Descripción de clases
 
-## Paquete `chinchon.deck`
+## [Paquete `chinchon.deck`](./src/chinchon/deck/)
 
-### `Card`
+### [`Card`](./src/chinchon/deck/Card.java)
 
 Representa una carta de la Baraja Española.
 
@@ -359,7 +359,7 @@ Métodos principales:
 
 ---
 
-### `Deck`
+### [`Deck`](./src/chinchon/deck/Deck.java)
 
 Representa la baraja completa del juego.
 
@@ -376,7 +376,7 @@ Métodos principales:
 
 ---
 
-### `DiscardPile`
+### [`DiscardPile`](./src/chinchon/deck/DiscardPile.java)
 
 Representa el mazo de descartes.
 
@@ -393,7 +393,7 @@ Métodos principales:
 
 ---
 
-### `DrawPile`
+### [`DrawPile`](./src/chinchon/deck/DrawPile.java)
 
 Representa el mazo de robo.
 
@@ -410,7 +410,7 @@ Métodos principales:
 
 ---
 
-### `NumCard`
+### [`NumCard`](./src/chinchon/deck/NumCard.java)
 
 Enumeración que representa los valores de las cartas.
 
@@ -435,7 +435,7 @@ Métodos principales:
 
 ---
 
-### `Suit`
+### [`Suit`](./src/chinchon/deck/Suit.java)
 
 Enumeración que representa los palos de la Baraja Española.
 
@@ -454,9 +454,9 @@ Métodos principales:
 
 ---
 
-## Paquete `chinchon.player`
+## [Paquete `chinchon.player`](./src/chinchon/player/)
 
-### `IPlayer`
+### [`IPlayer`](./src/chinchon/player/IPlayer.java)
 
 Interfaz que define el comportamiento común que debe tener cualquier jugador del juego.
 
@@ -472,7 +472,7 @@ Métodos principales:
 
 ---
 
-### `Player`
+### [`Player`](./src/chinchon/player/Player.java)
 
 Clase base que implementa la interfaz `IPlayer`.
 
@@ -489,7 +489,7 @@ Métodos principales:
 
 ---
 
-### `PlayerHuman`
+### [`PlayerHuman`](./src/chinchon/player/PlayerHuman.java)
 
 Representa a un jugador humano.
 
@@ -503,7 +503,7 @@ Métodos principales:
 
 ---
 
-### `IA`
+### [`IA`](./src/chinchon/player/IA.java)
 
 Representa a un jugador controlado por la máquina.
 
@@ -517,7 +517,7 @@ Métodos principales:
 
 ---
 
-### `PlayerFactory`
+### [`PlayerFactory`](./src/chinchon/player/PlayerFactory.java)
 
 Clase encargada de crear jugadores.
 
@@ -530,7 +530,7 @@ Métodos principales:
 
 ---
 
-### `HandCombiner`
+### [`HandCombiner`](./src/chinchon/player/HandCombiner.java)
 
 Clase encargada de analizar la mano de un jugador y detectar combinaciones válidas.
 
@@ -547,7 +547,7 @@ Métodos principales:
 
 ---
 
-### `CombinationResult`
+### [`CombinationResult`](./src/chinchon/player/CombinationResult.java)
 
 Representa el resultado del análisis de una mano.
 
@@ -570,7 +570,7 @@ Métodos principales:
 
 ---
 
-### `HandAssesor`
+### [`HandAssesor`](./src/chinchon/player/HandAssesor.java)
 
 Clase encargada de valorar la utilidad de las cartas y calcular puntuaciones relacionadas con la mano.
 
@@ -582,7 +582,7 @@ Métodos principales:
 
 ---
 
-### `PosibHandCombiner`
+### [`PosibHandCombiner`](./src/chinchon/player/PosibHandCombiner.java)
 
 Clase similar a `HandCombiner`, orientada a calcular posibles combinaciones futuras.
 
@@ -595,7 +595,7 @@ Métodos principales:
 
 ---
 
-### `PosibCombinationResult`
+### [`PosibCombinationResult`](./src/chinchon/player/PosibCombinationResult.java)
 
 Representa el resultado de un análisis de posibles combinaciones.
 
@@ -613,9 +613,9 @@ Métodos principales:
 
 ---
 
-## Paquete `chinchon.table`
+## [Paquete `chinchon.table`](./src/chinchon/table/)
 
-### `Main`
+### [`Main`](./src/chinchon/table/Main.java)
 
 Clase principal del programa.
 
@@ -628,7 +628,7 @@ Métodos principales:
 
 ---
 
-### `Menu`
+### [`Menu`](./src/chinchon/table/Menu.java)
 
 Clase encargada de mostrar el menú principal del juego.
 
@@ -641,7 +641,7 @@ Métodos principales:
 
 ---
 
-### `MotorGame`
+### [`MotorGame`](./src/chinchon/table/MotorGame.java)
 
 Clase encargada de arrancar y coordinar el flujo general de la partida.
 
@@ -652,7 +652,7 @@ Métodos principales:
 
 ---
 
-### `AgentGame`
+### [`AgentGame`](./src/chinchon/table/AgentGame.java)
 
 Clase que representa el agente o controlador general de la partida.
 
@@ -666,7 +666,7 @@ Métodos principales:
 
 ---
 
-### `AgentRound`
+### [`AgentRound`](./src/chinchon/table/AgentRound.java)
 
 Clase encargada de gestionar una ronda concreta.
 
@@ -688,7 +688,7 @@ Métodos principales:
 
 ---
 
-### `TurnController`
+### [`TurnController`](./src/chinchon/table/TurnController.java)
 
 Clase encargada de controlar el turno de cada jugador.
 
@@ -701,7 +701,7 @@ Métodos principales:
 
 ---
 
-### `ConsoleInput`
+### [`ConsoleInput`](./src/chinchon/table/ConsoleInput.java)
 
 Clase auxiliar para gestionar la entrada de datos por consola.
 
@@ -719,7 +719,7 @@ Métodos principales:
 
 ---
 
-# Tests
+# [Tests](./test/chinchon/)
 
 ## Herramienta utilizada
 
@@ -774,7 +774,7 @@ Este enfoque ayuda a comprobar condiciones límite y ramas específicas de la l�
 
 ## Estructura de los tests
 
-Los tests se encuentran dentro de la carpeta `test`, manteniendo una estructura similar a la de `src`.
+Los tests se encuentran dentro de la [carpeta `test`](./test/chinchon/), manteniendo una estructura similar a la de `src`.
 
 ```text
 test/
@@ -795,9 +795,9 @@ Esta organización permite separar los tests según el paquete o módulo funcion
 
 ## Descripción de los tests
 
-## `Deck_Test`
+## [`Deck_Test`](./test/chinchon/deck/test/Deck_Test.java)
 
-Este test se centra en comprobar el correcto funcionamiento de la baraja.
+Este test se centra en comprobar el [correcto funcionamiento de la baraja.](./test/chinchon/deck/test/Deck_Test.png)
 
 Entre los aspectos que se pueden verificar se encuentran:
 
@@ -807,13 +807,13 @@ Entre los aspectos que se pueden verificar se encuentran:
 - Que el reparto de cartas reduzca correctamente el número de cartas disponibles.
 - Que la baraja pueda mezclarse sin perder ni duplicar cartas.
 
-Es un test enfocado principalmente al paquete `chinchon.deck`.
+Es un test enfocado principalmente al paquete [`chinchon.deck`](./src/chinchon/deck/).
 
 ---
 
-## `CombinationResult_Test`
+## [`CombinationResult_Test`](./test/chinchon/player/test/CombinationResult_Test.java)
 
-Este test comprueba situaciones relacionadas con el cierre de ronda.
+Este test [comprueba situaciones relacionadas con el cierre de ronda.](./test/chinchon/player/test/CombinationResult_Test.png)
 
 Utiliza pruebas parametrizadas para validar diferentes manos y contextos de turno.
 
@@ -830,9 +830,9 @@ Este test valida una parte fundamental de las reglas del juego, ya que el cierre
 
 ---
 
-## `HandCombiner_Test`
+## [`HandCombiner_Test`](./test/chinchon/player/test/HandCombiner_Test.java)
 
-Este test se centra en comprobar la detección de combinaciones en una mano.
+Este test se centra en [comprobar la detección de combinaciones en una mano.](./test/chinchon/player/test/HandCombiner_Test.png)
 
 Evalúa si el sistema identifica correctamente:
 
@@ -848,9 +848,9 @@ Su objetivo es garantizar que la lógica encargada de analizar la mano sea coher
 
 ---
 
-## `IA_Test`
+## [`IA_Test`](./test/chinchon/player/test/IA_Test.java)
 
-Este test comprueba el comportamiento del jugador controlado por IA.
+Este test [comprueba el comportamiento del jugador controlado por IA.](./test/chinchon/player/test/IA_Test.png)
 
 Se divide principalmente en dos tipos de situaciones:
 
@@ -881,7 +881,7 @@ Este test permite comprobar que la IA no actúa de forma aleatoria, sino siguien
 
 # Documentación adicional
 
-El proyecto incluye una carpeta `doc` con documentación generada mediante **Javadoc**.
+El proyecto incluye una [carpeta `doc`](./doc/) con [documentación generada mediante **Javadoc**](./doc/index.html).
 
 Esta documentación permite consultar:
 
@@ -892,7 +892,7 @@ Esta documentación permite consultar:
 - Índices de búsqueda.
 - Relaciones entre clases e interfaces.
 
-También se incluye una carpeta `UML` con un diagrama del proyecto, útil para comprender visualmente la estructura de clases y sus relaciones.
+También se incluye una [carpeta `UML`](./UML/) con un [diagrama del proyecto](./UML/ChinchonUML.png), útil para comprender visualmente la estructura de clases y sus relaciones.
 
 ---
 
