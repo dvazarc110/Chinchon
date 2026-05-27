@@ -883,7 +883,7 @@ Este test permite comprobar que la IA no actúa de forma aleatoria, sino siguien
 
 El proyecto incluye una [carpeta `doc`](./doc/) con [documentación generada mediante **Javadoc**](https://dvazarc110.github.io/Chinchon/).
 
-Esta documentación permite consultar:
+Esta documentación permite [consultar](https://dvazarc110.github.io/Chinchon/index-files/index-1.html):
 
 - Paquetes del proyecto.
 - Clases existentes.
